@@ -6,7 +6,7 @@ export class ImageComponent extends BaseComponent<HTMLElement>{
     // 사용자에게 입력받은 내용을 사용할 경우에는 그것을 innerHTML로 사용하는것은 위험하다
     super(`<section class="image">
           <div class="image__holder"><img class="image__thumbnail"></div>
-          <h2 class="image__title"></h2>
+          <h2 class="page-item__title image__title"></h2>
           </section>`);
 
     const imageElement = this.element.querySelector('.image__thumbnail')! as HTMLImageElement;
